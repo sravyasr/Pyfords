@@ -1,0 +1,16 @@
+<html>
+    <head><title>Student Attendance</title></head>
+    <body>
+        {% for e in er %}
+            {% if e != "success" %}
+                <h4 style = "color:red"> - {{ e }} </h4><br>
+            {% endif%}
+        {% endfor %}
+        
+        <ul>
+        {% for a in details %}
+            <li>{{ a }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
